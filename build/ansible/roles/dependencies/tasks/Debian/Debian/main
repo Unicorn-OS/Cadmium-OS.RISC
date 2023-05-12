@@ -2,8 +2,10 @@
 - name: unlisted dependencies
   ansible.builtin.apt:
     pkg:
-    - git
+    - bison
+    - flex
     - gcc
+    - git
     - libncurses-dev
     - make
   become: true
