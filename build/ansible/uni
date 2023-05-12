@@ -1,9 +1,10 @@
 ---
 - hosts: debian #, local, fedora, ubuntu
   vars:
-    somevar: "value"
+    usb_device: sda
 
   roles:
-  # - dependencies
+  - dependencies
   - init
+  - config
   - build

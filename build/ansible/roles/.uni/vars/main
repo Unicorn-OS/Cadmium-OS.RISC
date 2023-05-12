@@ -1,0 +1,5 @@
+---
+
+src_dir: "/home/{{ ansible_user }}"
+
+# src_dir: "/home/{{ ansible_user }}/.uni/os/src"

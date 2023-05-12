@@ -1,8 +1,9 @@
 ---
-- name: pre Install
+- name: pre
   ansible.builtin.apt:
     pkg:
     - git
+    - make
   become: true
 
 

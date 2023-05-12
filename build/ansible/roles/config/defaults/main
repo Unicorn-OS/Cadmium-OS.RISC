@@ -1,0 +1,5 @@
+---
+
+build_in_ram: false
+
+arch: "arm64-chromebook"

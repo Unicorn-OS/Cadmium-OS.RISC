@@ -1,3 +1,0 @@
----
-
-src_dir: "/home/{{ ansible_user }}/.uni/os/src"

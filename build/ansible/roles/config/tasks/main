@@ -1,0 +1,7 @@
+---
+
+- name: Set Compile threads
+  ansible.builtin.lineinfile:
+    path: "{{ src_dir }}/Cadmium/config"
+    regexp: '^THREADS='
+    line: "THREADS=\"{{ compile_threads }}\""
