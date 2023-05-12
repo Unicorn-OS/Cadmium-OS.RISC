@@ -1,0 +1,8 @@
+---
+- hosts: debian #, local, fedora, ubuntu
+  vars:
+    somevar: "value"
+
+  roles:
+  - dependencies
+  - build
