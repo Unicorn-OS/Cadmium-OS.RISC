@@ -8,7 +8,7 @@
     - git
     - libncurses-dev
     - libssl-dev
-    - liblz4-dev
+    - lz4
     - make
   become: true
 
