@@ -2,6 +2,5 @@
 - name: Install 
   ansible.builtin.apt:
     pkg:
-    - foo
-    - foo-tools
+    - debootstrap
   become: true

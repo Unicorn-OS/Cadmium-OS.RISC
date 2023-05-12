@@ -2,7 +2,7 @@
 - name: Update roles to newer OS Distro versions
   hosts: local
   vars:
-    role_name: "App/install"
+    role_name: "dependencies"
 
   tasks:
   - name: Create a symbolic link, to update role
