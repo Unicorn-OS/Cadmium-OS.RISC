@@ -10,3 +10,4 @@
     repo: 'https://github.com/Maccraft123/Cadmium.git'
     dest: "{{ src_dir }}/Cadmium"
     depth: "{{ clone_depth }}"
+    update: false

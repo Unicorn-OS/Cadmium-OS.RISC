@@ -1,8 +1,10 @@
 ---
-- name: pre
+- name: unlisted dependencies
   ansible.builtin.apt:
     pkg:
     - git
+    - gcc
+    - libncurses-dev
     - make
   become: true
 
