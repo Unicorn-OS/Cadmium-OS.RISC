@@ -4,5 +4,6 @@
     somevar: "value"
 
   roles:
-  - dependencies
+  # - dependencies
+  - init
   - build

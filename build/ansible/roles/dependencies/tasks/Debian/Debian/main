@@ -1,6 +1,24 @@
 ---
-- name: Install 
+- name: pre Install
+  ansible.builtin.apt:
+    pkg:
+    - git
+  become: true
+
+
+# https://github.com/Maccraft123/Cadmium#dependencies-on-build-machine
+
+- name: Install Dependencies on build machine
   ansible.builtin.apt:
     pkg:
     - debootstrap
+    - qemu-user-static
+    - vboot-utils
+    - u-boot-tools
+    - gcc-aarch64-linux-gnu
+    - gcc-arm-linux-gnueabihf
+    - curl
+    - libarchive-tools
+    - f2fs-tools
+    - parted
   become: true

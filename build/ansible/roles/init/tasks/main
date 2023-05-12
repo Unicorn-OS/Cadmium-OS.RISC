@@ -1,0 +1,12 @@
+---
+
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: "{{ src_dir }}"
+    state: directory
+
+- name: Git checkout
+  ansible.builtin.git:
+    repo: 'https://github.com/Maccraft123/Cadmium.git'
+    dest: "{{ src_dir }}/Cadmium"
+    depth: "{{ clone_depth }}"
