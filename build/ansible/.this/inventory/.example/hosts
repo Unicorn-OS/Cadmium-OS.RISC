@@ -20,6 +20,13 @@ ansible_become_password=u
 ansible_user=me
 ansible_become_password=u
 
+[debian]
+10.0.0.104
+
+[debian:vars]
+ansible_user=me
+ansible_become_password=u
+
 
 [test:children]
 fedora
