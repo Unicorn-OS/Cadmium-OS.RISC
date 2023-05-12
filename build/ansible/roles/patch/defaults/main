@@ -1,0 +1,4 @@
+---
+
+bad_patch:
+- veyron.better_clock_selection_logic_and_dts_rate_list.patch

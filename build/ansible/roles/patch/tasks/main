@@ -1,0 +1,8 @@
+---
+
+- name: Remove Broken patch files
+  ansible.builtin.file:
+    path: "{{ src_dir }}/Cadmium/kernel/patches/{{ item }}"
+    state: absent
+  with_items:
+    - "veyron.better_clock_selection_logic_and_dts_rate_list.patch"

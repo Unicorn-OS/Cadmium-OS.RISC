@@ -7,4 +7,5 @@
   - dependencies
   - init
   - config
+  - patch
   - build
